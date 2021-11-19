@@ -103,7 +103,7 @@ external_stylesheets = [
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = "Teams Statistics Page v1"
-#server = app.server
+server = app.server
 
 #########################################################
 ################# D A S H  H T M L ######################
@@ -180,4 +180,4 @@ app.layout = html.Div(
 )
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=False)
