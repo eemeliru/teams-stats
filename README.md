@@ -3,7 +3,7 @@
 This tool combines different Teams meeting statistics into nice looking graphs.
 
 Requirements: 
-Python (developed & tested with v.3.8.7.)
+Python (developed & tested with v.3.8.7.)  
 Teams language to English
 
 [DEMOPAGE](http://teams-stats-anon.herokuapp.com/)

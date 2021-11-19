@@ -6,7 +6,7 @@ import pandas as pd
 
 def preprocess():
 
-    df = pd.read_csv('allDataPreprocessed.csv')
+    df = pd.read_csv('anonData.csv')
     #Oikeat typet kolumneille
     df['Join Time'] = pd.to_datetime((df['Join Time']), format='%d.%m.%Y klo %H.%M.%S')
     df['Leave Time'] = pd.to_datetime((df['Leave Time']), format='%d.%m.%Y klo %H.%M.%S')
