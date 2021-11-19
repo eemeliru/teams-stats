@@ -1,22 +1,21 @@
-# Teams palaveri statistiikat
+# Teams meeting statistics
 
-Työkalu yhdistää kansiosta löytyvät Teamsin luomat kokousraportit hienoiksi tilastoiksi/graafeiksi. 
+This tool combines different Teams meeting statistics into nice looking graphs.
 
-Vaatii: 
-Pythonin toimiakseen (testattu versiolla 3.8.7.)
-Teams asetettu englannin kielelle
+Requirements: 
+Python (developed & tested with v.3.8.7.)
+Teams language to English
 
 [DEMOPAGE](http://teams-stats-anon.herokuapp.com/)
-u: teams
-pw: stats@nonymis3D!
 
-### Käyttöohje:  
-1. Lataa Teamsin luomat kokouksen osallistumisraportit (löytyvät kokouksen chatista)
-2. Siirrä raportit samaan kansioon näiden koodien kanssa
-3. Avaa kansioon komentorivi/Powershell & syötä komento: ``pip install -r requirements.txt``
-4. Aja CSV2XLSXrunner.py , joka muuttaa Teamsin luomat pseudo-csv -tiedostot .xlsx -muotoon
-5. Aja ExcelCombiner.py, joka tekee raporteille esikäsittelyt ja yhdistää ne yhteen .csv -tiedostoon
-   1. (Datasetin anonymisointia varten aja anonGen.py tässä kohtaa)
-6. Aja app.py, joka tekee graafit + avaa osoitteeseen 127.0.0.1:8050 -Dash serverin, josta voit katsoa tilastoja. Jos haluat paikallisen .html -tiedoston, paina sivun vasemmasta alanurkasta löytyvää "Download HTML" -nappia.
+
+### Install and user manual:  
+1. Download meetingAttendance reports from meeting's chat
+2. Move those reports to /attendanceReports -folder
+3. Run with console: ``pip install -r requirements.txt``
+4. Run CSV2XLSXrunner.py: this modifies attendanceReports - pseudo-csv's to .xlsx -format
+5. Run ExcelCombiner.py: this performs preprocessing to reports and combines them to one .csv -file
+   1. (Here you can anonymize the dataset with the anonGen.py)
+6. Run app.py: and open 127.0.0.1:8050 -> you now have Dash server, where you can see the stats. Iff you want local .html -file, press the Download HTML -button located in bottom-left corner of the page.
 
 Enjoy :)
